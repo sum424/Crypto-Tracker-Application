@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crypto Tracker Application</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Crypto Tracker Application</h1>
-            <p>Track and compare your favorite cryptocurrencies in real-time</p>
-        </header>
+      <!-- title header -->
+      <header>
+        <h1>Crypto Tracker Application</h1>
+        <p>Track and compare your favorite cryptocurrencies in real-time</p>
+      </header>
 
-        <div class="content-wrapper">
-            <section class="crypto-list">
-                <h2>Available Cryptocurrencies</h2>
-                <div class="sort-menu">
-                    <label for="sortCriteria">Sort by:</label>
-                    <select id="sortCriteria" onchange="sortCryptoList()">
-                        <option value="name">Name</option>
-                        <option value="price">Price</option>
-                        <option value="change">24hr Change</option>
-                    </select>
-                </div>
-                <div class="crypto-header">
-                    
-                    <div>Crypto Name</div>
-                    <div class="crypto-div">Value</div>
-                    <div class="crypto-div">Actions</div>
-                </div>
-                <div id="cryptoListContainer">
-                    <p class="loading-indicator">Loading data...</p>
-                </div>
-            </section>
+      <div class="content-wrapper">
+        <section class="crypto-list">
+          <h2>Available Cryptocurrencies</h2>
+          <!-- sorting menu-->
+          <div class="sort-menu">
+            <label for="sortCriteria">Sort by:</label>
+            <select id="sortCriteria" onchange="sortCryptoList()">
+              <option value="name">Name</option>
+              <option value="price">Price</option>
+              <option value="change">24hr Change</option>
+            </select>
+          </div>
+          <div class="crypto-header">
+            <div>Crypto Name</div>
+            <div class="crypto-div">Value</div>
+            <div class="crypto-div">Actions</div>
+          </div>
+          <!-- crypto values -->
+          <div id="cryptoListContainer">
+            <p class="loading-indicator">Loading data...</p>
+          </div>
+        </section>
 
-            <section class="comparison-section">
-                <h2>Comparison (Max 5)</h2>
-                <div id="comparisonContainer" class="comparison-grid"></div>
-            </section>
-        </div>
+        <section class="comparison-section">
+          <h2>Comparison (Max 5)</h2>
+          <div id="comparisonContainer" class="comparison-grid"></div>
+        </section>
+      </div>
     </div>
 
-    <script src="main.js">
-        
-    </script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
